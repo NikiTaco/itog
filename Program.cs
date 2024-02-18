@@ -13,7 +13,7 @@
 
 string[] CreateNewArray(string[] array,int number)
 {
-  string[] secondArray = new string[null];
+  string[] secondArray = new string[number];
   int j = 0;
   for (int i = 0; i < array.Length; i++)
   {
@@ -27,9 +27,9 @@ string[] CreateNewArray(string[] array,int number)
 
 static void WriteArray(string[] secondArray)
 {
-    for (int i = 0; i < secondArray.Length; i++)
+    foreach (string s in secondArray)
     {
-        Console.WriteLine(secondArray[i]);
+        Console.WriteLine(s);
     }
 }
 
